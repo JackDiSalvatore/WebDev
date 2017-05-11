@@ -1,5 +1,17 @@
+/*borders have:
+width
+color
+style*/
+
+
 h1 {
     color: #006FFF;
+
+/*    border-width: 3px;
+    border-style: solid;
+    border-color: purple;*/
+
+    border: 3px dashed rgb(200,0,200);
 }
 
 li {
@@ -8,4 +20,12 @@ li {
 
 h4 {
     color: rgba(56, 255, 100, 0.5);
+    background: rgb(255, 100, 40);
 }
+
+body {
+   background: pink;
+/*    background: url(http://www.wallpaperhdc.com/wp-content/uploads/2017/04/wood-grain-textures-picture-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+*/}
