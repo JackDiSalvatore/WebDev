@@ -26,10 +26,17 @@ li a {
 }
 
 /*Adjacent Selector*/
-/*unordered lists that come after a h1*/
+/*the FIRST unordered lists that comes after a h1*/
 h1 + ul {
     border: 3px solid rgb(15,255,75);
 }
+
+/*
+Select any p following a ul
+ul ~ p {
+   color: red;
+}
+*/
 
 /*Attribute Selector*/
 input[type="checkbox"] {
