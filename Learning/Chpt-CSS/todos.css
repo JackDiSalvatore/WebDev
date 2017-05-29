@@ -20,7 +20,7 @@ li {
 }
 
 /*Descendant Selector*/
-/*images that are nested in a list item*/
+/*anchor links that are nested in a list item*/
 li a {
     background: black;
 }
