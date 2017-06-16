@@ -1,0 +1,4 @@
+Hover.css is made available under a free personal license and paid commercial license. The Free Personal License allows you to use Hover.css for personal use only. You'll need to purchase a commercial license if you're not willing to make the modified version public.
+
+Read more about licenses: https://www.uplabs.com/market/license
+Purchase a license: https://site.uplabs.com/posts/hover-css-a-collection-of-css3-hover-effects
