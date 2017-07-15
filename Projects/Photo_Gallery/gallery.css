@@ -1,0 +1,42 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: #2EE4FF;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
+
+.row .thumbnail  {
+    background: #ecf0f1;
+/*    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.navbar-inverse {
+    background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #2EE4FF;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:hover{
+    color: #2EE4FF;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
