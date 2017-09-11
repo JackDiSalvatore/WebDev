@@ -1,0 +1,1 @@
+var events = document.querySelectorAll(".standard-table a")
