@@ -1,0 +1,21 @@
+body {
+    background-color: #232323;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#container {
+    max-width: 600px;           /*Max size of container with the squares inside*/
+    margin: 0 auto;             /*Centers container*/
+}
+
+.square {
+    background-color: purple;
+    width: 30%;                 /*Width of the square*/
+    padding-bottom: 30%;        /*This creates the square*/
+    margin: 1.66%;              /*Margin between squares*/
+    float: left;                /*Puts them side by side*/
+}
