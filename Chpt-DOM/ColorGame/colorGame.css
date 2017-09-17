@@ -7,6 +7,26 @@ h1 {
     text-align: center;
 }
 
+#rgbDisplay {
+    text-transform: uppercase;
+}
+
+#reset {
+    text-transform: uppercase;
+}
+
+#stripe {
+    height: 30px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.selected {
+    background-color: rgb(50, 150, 255);
+    color: white;
+}
+
 #container {
     max-width: 600px;           /*Max size of container with the squares inside*/
     margin: 0 auto;             /*Centers container*/
