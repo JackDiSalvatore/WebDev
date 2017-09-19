@@ -90,8 +90,9 @@ resetButton.addEventListener("click", function(){
         squares[squareIndex].style.backgroundColor = colors[squareIndex];
     }
 
-    header.style.backgroundColor = "#232323";
+    header.style.backgroundColor = "steelblue";
     resetButton.textContent = "New Colors";
+    messageDisplay.textContent = "";
 });
 
 /* Start of code*/
