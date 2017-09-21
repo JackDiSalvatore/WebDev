@@ -6,11 +6,10 @@ var colors = generateRandomColors(mode);
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickRandomColor();
 var resetButton = document.querySelector("#reset");
-var easyButton = document.querySelector("#easy");
-var hardButton = document.querySelector("#hard");
 var rgbDisplay = document.getElementById("rgbDisplay");
 var messageDisplay = document.querySelector("#messageDisplay");
 var header = document.querySelector("h1");
+var modButtons = document.querySelectorAll(".mode");
 
 rgbDisplay.textContent = pickedColor;
 
@@ -43,7 +42,20 @@ function generateRandomColors(numberOfColors) {
     return randomColorArray;
 }
 
-easyButton.addEventListener("click", function(){
+for(var button = -0; i < modeButtons.lenth; button++) {
+    modeButtons[button].addEventListener("click", function() {
+        modeButtons[0].classList.remove("selected");    // manually remove class
+        modeButtons[1].classList.remove("selected");    // from both buttons
+        this.classList.add("selected");
+
+        // figure out how many squares to show
+        // pick new colors
+        // update page to reflect changes
+    });
+}
+
+
+/*easyButton.addEventListener("click", function(){
     easyButton.classList.add("selected");
     hardButton.classList.remove("selected");
 
@@ -78,7 +90,7 @@ hardButton.addEventListener("click", function(){
         squares[squareIndex].style.backgroundColor = colors[squareIndex];
         squares[squareIndex].style.display = "block";
     }
-});
+});*/
 
 resetButton.addEventListener("click", function(){
     colors = generateRandomColors(mode);
@@ -90,8 +102,8 @@ resetButton.addEventListener("click", function(){
         squares[squareIndex].style.backgroundColor = colors[squareIndex];
     }
 
+    this.textContent = "New Colors";
     header.style.backgroundColor = "steelblue";
-    resetButton.textContent = "New Colors";
     messageDisplay.textContent = "";
 });
 

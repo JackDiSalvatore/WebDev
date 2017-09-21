@@ -26,6 +26,7 @@ p {
 button {
     border: none;
     background: none;
+    outline: none;
     height: 100%;               /* Takes up 100% of the parent element- stripe div */
     color: steelblue;
     text-transform: uppercase;
