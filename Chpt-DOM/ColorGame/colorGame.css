@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     font-weight: normal;
     text-transform: uppercase;
-    background-color: steelblue;
+    background-color: #E00000/*steelblue*/;
     line-height: 1.1;
     margin: 0;
     padding: 20px 0px;          /* 20px top and bottom, 0 left and right */
@@ -28,7 +28,7 @@ button {
     background: none;
     outline: none;
     height: 100%;               /* Takes up 100% of the parent element- stripe div */
-    color: steelblue;
+    color: #E00000/*steelblue*/;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: inherit;         /* inherit from parent - h1 */
@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: steelblue;
+    background-color: #E00000/*steelblue*/;
     color: white;
 }
 
@@ -56,7 +56,7 @@ button:hover {
 }
 
 .selected {
-    background-color: steelblue;
+    background-color: #E00000/*steelblue*/;
     color: white;
 }
 
