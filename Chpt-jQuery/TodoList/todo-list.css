@@ -1,0 +1,47 @@
+body {
+    padding-top: 70px;
+    background: linear-gradient(to right, rgb(0,170,255), rgb(200,240,255));
+    padding-bottom: 70px;
+}
+
+#todoList {
+    margin: auto 30%;
+    width: 40%;
+    /*border: 1px solid black;*/ /*Get rid of this latta*/
+    background-color: white;
+}
+
+.fa .fa-plus{
+    /* insert style here */
+}
+
+h3 {
+    margin-left: 0;
+    margin: auto;
+    padding: 4px 6px;
+    background-color: rgb(0,120,255);
+    color: white;
+}
+
+#enterTodo {
+    width: 100%;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    color: rgb(0, 170, 255);
+    text-indent: 6px;
+}
+
+ol {
+    list-style-type: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 0px;
+}
+
+li {
+    padding-left: 6px;
+}
+
+li:nth-child(even) {
+    background-color: rgba(0,0,0,0.1);
+}
