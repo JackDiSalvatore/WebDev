@@ -25,7 +25,7 @@ h3 {
     color: white;
 }
 
-i {
+#toggleInput {
     display: inline-block;
     vertical-align: bottom;
     width: 5%;
@@ -54,4 +54,19 @@ li {
 
 li:nth-child(even) {
     background-color: rgba(0,0,0,0.1);
+}
+
+.fa-trash-o {
+    float: left;
+    padding-right: 4px;
+    color: red;
+    display: inline-block;
+}
+
+.hideMe {
+    display: none;
+}
+
+.checkOffItem {
+    text-decoration: line-through;
 }
