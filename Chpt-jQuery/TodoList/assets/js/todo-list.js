@@ -15,14 +15,15 @@ $("input[type='text']").keypress(function(event){
     }
 });
 
-/* check off handler */
-$("li").on("click", function(){
+/* Check off todo by clicking */
+$("li").click(function(){
     $(this).toggleClass("checkOffItem");
 });
 
-$("li").on("mouseenter", function() {
+/*$("li").on("mouseenter", function() {
     $(".trashCan").toggleClass("hideMe");
 });
+*/
 
 init();
 

@@ -6,7 +6,7 @@ body {
 }
 
 #todoList {
-    margin: auto 30%;
+    margin: 0 auto;
     width: 40%;
     /*border: 1px solid black;*/ /*Get rid of this latta*/
     background-color: white;
@@ -68,5 +68,6 @@ li:nth-child(even) {
 }
 
 .checkOffItem {
+    color: grey;
     text-decoration: line-through;
 }
