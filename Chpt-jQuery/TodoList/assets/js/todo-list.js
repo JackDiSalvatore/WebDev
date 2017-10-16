@@ -20,6 +20,15 @@ $("li").click(function(){
     $(this).toggleClass("checkOffItem");
 });
 
+/* Delete item */
+$(".trashCan").click(function(event) {
+    console.log("Deleted item");
+    $(this).parent().fadeOut(500, function(){
+        $(this).remove();
+    });
+    event.stopPropagation();
+});
+
 /*$("li").on("mouseenter", function() {
     $(".trashCan").toggleClass("hideMe");
 });
