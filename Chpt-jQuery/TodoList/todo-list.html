@@ -2,25 +2,26 @@
 <html>
 <head>
     <title>Todo List App</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/todo-list.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <script type="text/javascript" src="./assets/js/lib/jquery-3.2.1.min.js"></script>
     <script src="https://use.fontawesome.com/36cb3c2617.js"></script>
-    <link rel="stylesheet" type="text/css" href="./assets/css/todo-list.css">
 </head>
 <body>
 
 <div id="todoList">
 
     <div id="header">
-        <h3>TO-DO LIST</h3><i id="toggleInput" class="fa fa-plus" aria-hidden="true"></i>
+        <h1>To-Do List</h1><i id="toggleInput" class="fa fa-plus" aria-hidden="true"></i>
     </div>
     
 
     <input id="enterTodo" type="text" name="toDoTextInput" placeholder="Enter to do">
     <ol id="list">
-        <li id="itemOne" class="listItem">One</li>
+        <li><i class="fa fa-trash-o trashCan" aria-hidden="true"></i>One</li>
         <li><i class="fa fa-trash-o trashCan" aria-hidden="true"></i>Two</li>
-        <li>Three</li>
-        <li>Four</li>
+        <li><i class="fa fa-trash-o trashCan" aria-hidden="true"></i>Three</li>
+        <li><i class="fa fa-trash-o trashCan" aria-hidden="true"></i>Four</li>
      </ol>
 
 </div>

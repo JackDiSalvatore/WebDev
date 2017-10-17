@@ -1,28 +1,32 @@
 body {
     margin: 0;
-    padding-top: 70px;
     background: linear-gradient(to right, rgb(0,170,255), rgb(200,240,255));
     padding-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #todoList {
-    margin: 0 auto;
+    margin: 100px auto;
     width: 40%;
-    /*border: 1px solid black;*/ /*Get rid of this latta*/
-    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: #ececec;
 }
 
 #header {
     width: 100%;
-    background-color: rgb(0,120,255);
+    background-color: #2980B9;
 }
 
-h3 {
+h1 {
     width: 70%;
     display: inline-block;  /* This gets rid of that pesky margin! */
     margin: 0;
-    padding: 4px 6px;
+    padding: 10px 20px;
     color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+/*    letter-spacing: 0.1rem;*/
 }
 
 #toggleInput {
@@ -36,24 +40,29 @@ h3 {
 #enterTodo {
     width: 100%;
     border: none;
-    background-color: rgba(0,0,0,0.1);
+    height: 40px;
+    background-color: #ececec;
     color: rgb(0, 170, 255);
     text-indent: 6px;
 }
 
 ol {
     list-style-type: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 li {
     padding-left: 6px;
+    background-color: #FFF; /* White */
+    height: 40px;
+    line-height: 40px;
+    color: #666;
 }
 
-li:nth-child(even) {
-    background-color: rgba(0,0,0,0.1);
+/* Every 2nd */
+li:nth-child(2n) {
+    background-color: #ececec;
 }
 
 .fa-trash-o {
