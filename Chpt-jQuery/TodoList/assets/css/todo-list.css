@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    /* Check out uigradients.com*/
     background: linear-gradient(to right, rgb(0,170,255), rgb(200,240,255));
     padding-bottom: 70px;
     font-family: 'Roboto', sans-serif;
@@ -29,21 +30,30 @@ h1 {
 /*    letter-spacing: 0.1rem;*/
 }
 
-#toggleInput {
-    display: inline-block;
-    vertical-align: bottom;
-    width: 5%;
+.fa-plus {
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    /*width: 5%;*/
     float: right;
     color: white;
 }
 
 #enterTodo {
     width: 100%;
+    box-sizing: border-box;
     border: none;
     height: 40px;
     background-color: #ececec;
-    color: rgb(0, 170, 255);
-    text-indent: 6px;
+    color: #2980B9; /*Brighter blue rgb(0, 170, 255);*/
+    font-weight: 700;
+    text-indent: 20px;
+}
+
+/* when you click on the todo input */
+#enterTodo:focus {
+    background-color: white;
+    border: 3px solid #2980B9;
+    outline: none; /* Kills the highlight from the browser */
 }
 
 ol {

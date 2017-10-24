@@ -1,6 +1,6 @@
 
-/* toggleInput handler */
-$("#toggleInput").on("click", function() {
+/* plus icon handler */
+$(".fa-plus").on("click", function() {
     $("input[type='text']").slideToggle(500);
 });
 
