@@ -13,16 +13,11 @@ body {
     background-color: #ececec;
 }
 
-#header {
-    width: 100%;
-    background-color: #2980B9;
-}
 
 h1 {
-    width: 70%;
-    display: inline-block;  /* This gets rid of that pesky margin! */
     margin: 0;
     padding: 10px 20px;
+    background-color: #2980B9;
     color: white;
     font-size: 24px;
     font-weight: normal;
@@ -41,12 +36,13 @@ h1 {
 #enterTodo {
     width: 100%;
     box-sizing: border-box;
+/*    border: 3px solid rgba(0,0,0,0);*/
+    padding: 13px 13px 13px 20px;
     border: none;
-    height: 40px;
+/*    height: 40px;*/
     background-color: #ececec;
-    color: #2980B9; /*Brighter blue rgb(0, 170, 255);*/
-    font-weight: 700;
-    text-indent: 20px;
+    color: #2980B9; /*Brighter blue - rgb(0, 170, 255);*/
+    font-size: 15px;
 }
 
 /* when you click on the todo input */
@@ -63,7 +59,6 @@ ol {
 }
 
 li {
-    padding-left: 6px;
     background-color: #FFF; /* White */
     height: 40px;
     line-height: 40px;
@@ -75,11 +70,23 @@ li:nth-child(2n) {
     background-color: #ececec;
 }
 
-.fa-trash-o {
-    float: left;
-    padding-right: 4px;
-    color: red;
+/* Displays the delete icon */
+li:hover .trashCan {
+    width: 40px;
+    opacity: 1.0;
+
+}
+
+/* This is the span that hold the icon */
+.trashCan {
+    margin-right: 20px;
     display: inline-block;
+    text-align: center;
+    width: 0px;
+    background-color: #e74c3c;  /* Red */
+    color: white;
+    transition: 0.25s linear;
+    opacity: 0;
 }
 
 .hideMe {

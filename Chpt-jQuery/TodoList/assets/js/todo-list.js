@@ -11,7 +11,7 @@ $("input[type='text']").keypress(function(event){
         var todoText = $(this).val();
 
         console.log("You entered: " + todoText);
-        $("ol").append("<li><i class='fa fa-trash-o trashCan' aria-hidden='true'></i> " + todoText + "</li>");
+        $("ol").append("<li><span class='trashCan'><i class='fa fa-trash-o' aria-hidden='true'></i></span></i>" + todoText + "</li>");
 
         $(this, "textarea").val("");
     }
