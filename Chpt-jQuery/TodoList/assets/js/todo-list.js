@@ -1,7 +1,7 @@
 
 /* plus icon handler */
-$(".fa-plus").on("click", function() {
-    $("input[type='text']").slideToggle(500);
+$(".fa-plus").click(function() {
+    $("input[type='text']").fadeToggle(500);
 });
 
 /* input handler*/
@@ -35,10 +35,6 @@ $("ol").on("click", "li", function(){
     $(this).toggleClass("checkOffItem");
 });
 
-/*$("li").on("mouseenter", function() {
-    $(".trashCan").toggleClass("hideMe");
-});
-*/
 
 init();
 
