@@ -13,7 +13,6 @@ body {
     background-color: #ececec;
 }
 
-
 h1 {
     margin: 0;
     padding: 10px 20px;
@@ -74,7 +73,6 @@ li:nth-child(2n) {
 li:hover .trashCan {
     width: 40px;
     opacity: 1.0;
-
 }
 
 /* This is the span that hold the icon */
@@ -87,10 +85,6 @@ li:hover .trashCan {
     color: white;
     transition: 0.25s linear;
     opacity: 0;
-}
-
-.hideMe {
-    display: none;
 }
 
 .checkOffItem {
