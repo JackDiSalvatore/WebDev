@@ -1,0 +1,18 @@
+i.icon {
+    font-size: 2em;
+}
+
+.ui.main.text.container {
+    margin: 75px 5%;
+}
+
+#iconContainer {
+    padding-right: 0;
+}
+
+#deleteButton {
+    border: 1px solid black;
+    display: inline;
+    background-color: rgb(255,0,10);
+    color: white;
+}
