@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(40, 44, 51);
+    color: rgb(255, 255, 255);
+}
+
+.ui.bottom.attached.segment{
+    margin-bottom: 0;
+}
+
+#pusherContent {
+    background-color: rgb(40, 44, 51);
+ 
+}
+
+.site-content {
+    background-color: rgb(40, 44, 51);
+    
+    flex: 1;
+}
+
+
+/* HOME */
+/*.ui.raised.very.padded.text.container {
+    margin-top: 1%;
+}*/
+
+.ui.footer.form-page { /* Increased specificity for SO snippet priority */
+    font-family: 'Great Vibes', cursive;
+    text-align: right;
+    position: absolute;
+    background-color: inherit;
+    border-top: 1px solid white;
+    bottom: 0;
+    height: 6%;
+    width: 100%;
+}
+
+#signature {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#entryHeader {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-align: center;
+}
+
+#toIndex {
+    text-align: center;
+}
+/* ------------------------------------------------- */
+
+/* -------- INDEX --------------- */
+
+.ui.main.text.container {
+    margin: 70px auto;
+    background-color: rgb(40, 44, 51);
+}
+
+#indexHeader {
+    color: white;
+}
+
+/* ------------------------------------------------ */
+
+/* SHOW */
+.ui.huge.header {
+    text-transform: capitalize;
+}
+
+.top {
+    color: black;
+}
+
+.image {
+    display: inline;
+}
+
+#bikeImage {
+    width: 100%;
+}
+/* ---------------- */
+
+/* --------- DELETE -------*/
+#deleteButton {
+    border: 1px solid black;
+    background-color: red;
+}
+/* ----------------------- */

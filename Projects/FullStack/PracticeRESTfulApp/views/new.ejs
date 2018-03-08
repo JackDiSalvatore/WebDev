@@ -1,0 +1,30 @@
+<% include partials/header %>
+
+<div class="ui main text container">
+    <div class="ui top attached segment">
+        
+        <form class="ui form" action="/motorcycles" method="POST">
+            <div class="field">
+                <label>Brand</label>
+                <input type="text" name="motorcycle[brand]" placeholder="brand">
+            </div>
+            <div class="field">
+                <label>Model</label>
+                <input type="text" name="motorcycle[name]" placeholder="name">
+            </div>
+            <div class="field">
+                <label>Picture</label>
+                <input type="text" name="motorcycle[image]" placeholder="image">
+            </div>
+            <div class="field">
+                <label>Description</label>
+                <textarea name="motorcycle[description]"></textarea>
+            </div>
+            <button class="ui primary button">Add</button>
+        </form>  
+    
+    </div>
+</div>
+
+
+<% include partials/footer %>

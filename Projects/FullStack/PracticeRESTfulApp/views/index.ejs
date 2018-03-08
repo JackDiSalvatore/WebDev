@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+<div class="ui main text container">
+    <div id="indexHeader" class="ui huge header">Motorcycles</div>
+    <div class="ui top attached segment">
+        
+        <div class="ui divided items">
+            <% motorcycles.forEach(function(motorcycle){ %>
+                <div class="item">
+                    <div id="bikeImage" class="image">
+                        <img src="<%= motorcycle.image %>">
+                    </div>
+                </div>
+
+                <div class="description">
+                    <%= motorcycle.name %>
+                </div>
+                <div class="description">
+                    <%- motorcycle.description.substring(0, 50); %> ...
+                </div>
+                <div class="extra">
+                    <a class="ui green button" href="/motorcycles/<%= motorcycle._id %>">
+                        Read More
+                    </a>
+                </div>
+                <p>
+                    
+                </p>
+
+            <% }); %>
+        </div>
+        
+    </div>
+</div>
+
+<% include partials/footer %>

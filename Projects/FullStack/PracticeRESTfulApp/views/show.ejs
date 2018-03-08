@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<div class="ui main text container">
+    <div id="indexHeader" class="ui huge header"><%= motorcycle.brand %></div>
+    <div class="ui top attached segment">
+
+            <div class="item">
+                
+                <div class="ui header"> <%= motorcycle.name %> </div>
+                <img id="bikeImage" class="ui centered round image" src="<%= motorcycle.image %>">
+                <div class="description">
+                    <%- motorcycle.description %>
+                </div>
+                <div class="extra">
+                    <a class="ui secondary button" href="/motorcycles/<%= motorcycle._id%>/edit">EDIT</a>
+                    <form class="ui form" action="/motorcycles/<%= motorcycle._id %>?_method=DELETE" method="POST">
+                        <button id="deleteButton" class="ui secondary button">DELETE</button>
+                    </form> 
+                </div>
+                
+            </div>
+
+    </div>
+</div>
+
+
+<% include partials/footer %>
