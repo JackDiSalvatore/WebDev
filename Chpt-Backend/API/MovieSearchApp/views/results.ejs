@@ -1,0 +1,9 @@
+<h1>Results Page</h1>
+
+<ol>
+<% movies["Search"].forEach(function(movie){ %>
+    <li> <strong><%= movie.Title %></strong> - <em><%= movie.Year %></em></li>
+<% }); %>
+</ol>
+
+<a href="/">Search Again</a>
