@@ -1,0 +1,29 @@
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 3.0em;
+    text-align: center;
+}
+
+table {
+    margin: 0px auto;
+}
+
+
+#allFour {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.sides {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    height: 150px;
+}
+
+.topBottom {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 150px;
+}

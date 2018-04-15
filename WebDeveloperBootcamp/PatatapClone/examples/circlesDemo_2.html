@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circles Example 2: Lots of circles on the page</title>
+
+    <style type="text/css">
+        canvas {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="./paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+
+    var gradient = 200;
+
+    for(y = 0; y < 1000; y +=100) {
+        for(x = 0; x < 1000; x += 100) {
+            var myColor = "rgb(0, " + gradient + ", 255)";
+            new Path.RegularPolygon(new Point(x, y), 6, 10).fillColor = myColor;
+
+            gradient -= 20;
+            }
+        gradient = 200;
+    }
+
+
+    </script>
+</head>
+<body>
+
+    <canvas id="myCanvas" resize="true"></canvas>
+
+</body>
+</html>

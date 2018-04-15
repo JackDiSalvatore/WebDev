@@ -1,0 +1,65 @@
+body {
+    background: rgba(255,25,25,0.5);
+}
+
+li {
+    border: 4px solid red;
+}
+
+/*id*/
+#special {
+    background: rgba(100,20,100, 0.7);
+}
+
+/*class*/
+.completed {
+    text-decoration: line-through;
+}
+
+/*Star - selects everything*/
+* {
+    border: 1px solid grey;
+}
+
+/*Descendant Selector*/
+/*anchor links that are nested in a list item*/
+li a {
+    background: black;
+}
+
+/*Adjacent Selector*/
+/*the FIRST unordered lists that comes after a h1*/
+h1 + ul {
+    border: 3px solid rgb(15,255,75);
+}
+
+/*
+Select any p following a ul
+ul ~ p {
+   color: red;
+}
+*/
+
+/*Attribute Selector*/
+input[type="checkbox"] {
+    background: blue;
+}
+
+/*nth-of-type*/
+ul:nth-of-type(1) {
+    background: skyblue;
+}
+
+li:nth-of-type(even) {
+    background: gold;
+}
+
+/*others*/
+
+a:link {
+    color: rgb(0,80,255);
+}
+
+a:visited {
+    color: rgb(255,50,0);
+}

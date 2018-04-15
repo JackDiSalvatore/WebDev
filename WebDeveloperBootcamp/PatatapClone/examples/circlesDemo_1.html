@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PaperJS Circles Example</title>
+
+    <style type="text/css">
+        canvas {
+            width: 100%;
+            height: 100%;
+            background-color: coral;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+
+    <script type="text/javascript" src="./paper-full.js"></script>
+
+    <!-- http://paperjs.org/tutorials/getting-started/working-with-paper-js/ -->
+    <!-- http://paperjs.org/tutorials/paths/working-with-path-items/ -->
+    <script type="text/paperscript" canvas="myCanvas">
+        // Create a Paper.js Path object to draw within:
+        var path = new Path();
+        // Give the path a stroke color
+        path.strokeColor = 'blue';
+        // Create a starting point for the path
+        // (x, y) : starting at top left
+        //  x moves right as it increases
+        //  y moves down as it increases
+        var start = new Point(0, 100);
+        // Move the path to the starting point and draw a line from there
+        path.moveTo(start);
+        // Note the plus operator on Point objects
+        // PaperScript does that for us, and much more!
+        // the second point is also coordinates (x, y)
+        // this goes to the right 100, and up 10
+        path.lineTo(start + [100, -10]);
+
+        var myPath = new Path();
+        myPath.strokeColor = 'black';
+        myPath.add(new Point(0,0), new Point(100, 50));     // automatically connects them
+        myPath.insert(2, new Point(150, 65));               // insert as 3rd segment , it starts at 1?
+        myPath.insert(1, new Point(50, 75));                // insert as 2nd segment
+
+        // A smooth path
+        var smoothPath = new Path();
+        smoothPath.strokeColor = 'red';
+        smoothPath.add(new Point(30, 75));
+        smoothPath.add(new Point(30, 25));
+        smoothPath.add(new Point(80, 25));
+        smoothPath.add(new Point(80, 75));
+        smoothPath.closed = true;                 // connects the path
+
+        // Create a copy of the path and move it 100pt to the right:
+        var copy = smoothPath.clone();
+        copy.fullySelected = true;
+        copy.position.x += 100;                 // move to the right 100
+
+        // turn square into a circle with this method
+        copy.smooth();
+
+        // Circle example
+        var myCircle = new Path.Circle(new Point(100, 100), 35);    // (x, y), radius
+        myCircle.strokeColor = 'green';
+        // Circles have 4 segments
+        // kill the first segment, to destroy half of the circle
+        myCircle.removeSegment(0);
+        // myCircle.remove(); // kills the whole thing
+
+        var circle2 = new Path.Circle(new Point(400, 400), 100);
+        circle2.fillColor = "purple";
+
+        // Note: you cannot exceed the size of the canvas
+    </script>
+
+</head>
+<body>
+
+<canvas id="myCanvas" resize="true"></canvas>
+
+</body>
+</html>

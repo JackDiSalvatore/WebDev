@@ -1,0 +1,61 @@
+body {
+    padding-top: 70px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background: #FA0001;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
+
+.row .thumbnail  {
+    background: #ecf0f1;
+/*    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.navbar-inverse {
+    background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #2EE4FF;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:hover{
+    color: #2EE4FF;
+}
+
+.image1 {
+    background-image: url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18444288_1844754905843936_2063294807165370368_n.jpg);
+}
+
+.image2 {
+    background-image: url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/16908842_117526002105330_5326178614373253120_n.jpg);
+}
+
+.image3 {
+    background-image: url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17127115_221870454954215_827186739587055616_n.jpg);
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}

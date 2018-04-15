@@ -1,0 +1,83 @@
+html, body{
+    height: 100%; /* makes picture cover the entire page */
+    width: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background: url(https://images.unsplash.com/photo-1475527588268-e6a157656e35?dpr=1&auto=format&fit=crop&w=1500&h=844&q=80&cs=tinysrgb&crop=&bg=);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #8d8fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar:active {
+    background: #8d8fff;
+}
+.navbar-default {
+    background-color: #3F3F3F;
+    border-color: #01004B;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover {
+    color: #8d8fff;
+}
+
+.navbar-default .navbar-brand:visited {
+    color: #8d8fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:visited {
+    /*color: #aaaabb;*/
+    color: white; /*Might look better?*/
+}
+#activated {
+    color: black;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #8d8fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #000000;
+    background-color: #8d8fff;
+}
+
+#content {
+    padding-top: 25%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+hr {
+    width: 425px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.btn-default {
+    color: #01004B;
+}
+
+.btn-default:hover {
+    background-color: #8d8fff;
+    color: black;
+}

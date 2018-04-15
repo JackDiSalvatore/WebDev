@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    /* Check out uigradients.com*/
+    background: linear-gradient(to right, rgb(0,170,255), rgb(200,240,255));
+    padding-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#todoList {
+    margin: 100px auto;
+    width: 40%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: #ececec;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #2980B9;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+/*    letter-spacing: 0.1rem;*/
+}
+
+.fa-plus {
+    /*display: inline-block;*/
+    /*vertical-align: bottom;*/
+    /*width: 5%;*/
+    float: right;
+    color: white;
+}
+
+#enterTodo {
+    width: 100%;
+    box-sizing: border-box;
+/*    border: 3px solid rgba(0,0,0,0);*/
+    padding: 13px 13px 13px 20px;
+    border: none;
+/*    height: 40px;*/
+    background-color: #ececec;
+    color: #2980B9; /*Brighter blue - rgb(0, 170, 255);*/
+    font-size: 15px;
+}
+
+/* when you click on the todo input */
+#enterTodo:focus {
+    background-color: white;
+    border: 3px solid #2980B9;
+    outline: none; /* Kills the highlight from the browser */
+}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #FFF; /* White */
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+/* Every 2nd */
+li:nth-child(2n) {
+    background-color: #ececec;
+}
+
+/* Displays the delete icon */
+li:hover .trashCan {
+    width: 40px;
+    opacity: 1.0;
+}
+
+/* This is the span that hold the icon */
+.trashCan {
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 0px;
+    background-color: #e74c3c;  /* Red */
+    color: white;
+    transition: 0.25s linear;
+    opacity: 0;
+}
+
+.checkOffItem {
+    color: grey;
+    text-decoration: line-through;
+}
