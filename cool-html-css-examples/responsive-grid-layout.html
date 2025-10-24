@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Table Grid</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .table-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column by default (mobile) */
+    gap: 20px;
+  }
+
+  .table-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+
+  .table-item h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  /* 2 columns for tablets */
+  @media (min-width: 768px) {
+    .table-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* 3 columns for large screens */
+  @media (min-width: 1200px) {
+    .table-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Responsive Grid Layout</h1>
+
+<div class="table-grid">
+  <div class="table-item">
+    <h3>Item 1</h3>
+    <p>Content for the first item goes here.</p>
+  </div>
+  <div class="table-item">
+    <h3>Item 2</h3>
+    <p>Content for the second item goes here.</p>
+  </div>
+  <div class="table-item">
+    <h3>Item 3</h3>
+    <p>Content for the third item goes here.</p>
+  </div>
+  <div class="table-item">
+    <h3>Item 4</h3>
+    <p>Content for the fourth item goes here.</p>
+  </div>
+  <div class="table-item">
+    <h3>Item 5</h3>
+    <p>Content for the fifth item goes here.</p>
+  </div>
+  <div class="table-item">
+    <h3>Item 6</h3>
+    <p>Content for the sixth item goes here.</p>
+  </div>
+</div>
+
+</body>
+</html>
