@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Component</title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function App() {
+        const WeatherComponent = (props) => {
+          const [count, setCount] = React.useState(0);
+
+          React.useEffect(() => {
+            setCount(1);
+          }, []);
+
+          return (
+            <div>
+                <h1 onClick={() => setCount(count + 1)}>
+                    <button style={{ backgroundColor: count % 2 ? 'violet' : 'skyblue'}}>
+                        The Weather is {props.weather}, and the counter shows {count}
+                    </button>
+                </h1>
+            </div>
+          );
+        };
+
+        return <WeatherComponent weather={"sunny"} />;
+      }
+
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+
+      root.render(<App />);
+    </script>
+  </body>
+</html>
