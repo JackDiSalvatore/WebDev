@@ -1,0 +1,26 @@
+name: "nextjs-dashboard-infrastructure"
+
+services:
+  nextjs-dashboard-postgres:
+    container_name: nextjs-dashboard-postgres
+    image: ghcr.io/baosystems/postgis:16
+    restart: always
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    ports:
+      - "15432:5432"
+    user: postgres
+    # volumes:
+    #   - ./postgres/backup:/db_backup:rw
+    #   - ./postgres/initialize:/docker-entrypoint-initdb.d:ro
+    #   - ./postgres/config:/db_config:ro
+    #   - ./postgres/scripts:/scripts:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: nextjs-dashboard-postgres
+      POSTGRES_PASSWORD: password
