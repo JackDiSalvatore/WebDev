@@ -13,8 +13,11 @@ const server = app.listen(
     () => console.log(`Server is running on port ${PORT}`)
 );
 
-const socketio = require("socket.io");
-const io = socketio(server, {});    // add socket.io to express server!
+// const socketio = require("socket.io");
+// const io = socketio(server, {});    // add socket.io to express server!
+
+const { Server } = require("socket.io");
+const io = new Server(server, {});
 
 // Listen for (javascript/node) events
 io.on("connect", socket => {
